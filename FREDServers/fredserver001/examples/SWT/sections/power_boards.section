@@ -1,0 +1,28 @@
+POWER_BOARDS = {
+    INSTRUCTIONS = {
+        PATH = ../boards/powerboard/powerboard.conf
+    }
+
+    MAPPING = {
+        POWERUNIT[0,1,2,3] = ALF_FLP042/SERIAL_0/LINK_1
+        POWERUNIT[4,5,6,7] = ALF_FLP042/SERIAL_2/LINK_6
+    }
+
+    GROUPS = {
+        INIT_ALL = POWERUNIT[..]/INIT
+        MODULES/STATUS_ALL = POWERUNIT[..]/MODULES/STATUS
+        VOLTAGE/READ_ALL = POWERUNIT[..]/VOLTAGE/READ
+        {
+            CH = [0..15]
+        }
+        CURRENT/READ_ALL = POWERUNIT[..]/CURRENT/READ
+        {
+            CH = [0..15]
+        }
+        TEMPERATURE/READ_ALL = POWERUNIT[..]/TEMPERATURE/READ
+    }
+
+    MASK = {
+        POWERUNIT[3,6]
+    }
+}

@@ -1,0 +1,12 @@
+MAPI_EXAMPLE = {
+    INSTRUCTIONS = {
+        PATH = ../boards/mapi/mapi.conf
+    }
+
+    MAPPING = {
+        LOOP[0] = ALF_FLP001/SERIAL_0/LINK_2
+    }
+
+    GROUPS = {
+    }
+}

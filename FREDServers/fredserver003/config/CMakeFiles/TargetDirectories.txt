@@ -1,0 +1,4 @@
+/opt/fredserver/CMakeFiles/rebuild_cache.dir
+/opt/fredserver/CMakeFiles/edit_cache.dir
+/opt/fredserver/CMakeFiles/FREDServer.dir
+/opt/fredserver/CMakeFiles/Alfred.dir
